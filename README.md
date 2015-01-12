@@ -1,9 +1,11 @@
-#
+# Smiley Library
+
+Useful Node.js functions and utilities.
 
 ## Installation
 
 ```bash
-$ npm install 
+$ npm install smiley
 ```
 
 ## Testing
