@@ -1,10 +1,10 @@
 {
-  "name": "",
+  "name": "smiley",
   "version": "0.1.0",
   "author": "Mike Smiley <mikesmiley@me.com>",
-  "url": "https://github.com/mikesmiley/",
+  "url": "https://github.com/mikesmiley/smiley",
   "main": "./lib",
-  "repository": "mikesmiley/npm-template.git",
+  "repository": "mikesmiley/smiley.git",
   "scripts": {
     "doc": "cake doc",
     "prepublish": "cake build test doc",
@@ -16,7 +16,6 @@
     "jasmine-node": "^1.14.5"
   },
   "dependencies": {
-
   },
   "keywords": [
   ],
