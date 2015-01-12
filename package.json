@@ -1,6 +1,6 @@
 {
   "name": "smiley",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Mike Smiley <mikesmiley@me.com>",
   "url": "https://github.com/mikesmiley/smiley",
   "main": "./lib",
@@ -15,9 +15,7 @@
     "coffee-script": "^1.8.0",
     "jasmine-node": "^1.14.5"
   },
-  "dependencies": {
-  },
-  "keywords": [
-  ],
+  "dependencies": {},
+  "keywords": [],
   "license": "MIT"
 }
