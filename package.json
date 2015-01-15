@@ -2,13 +2,13 @@
   "name": "smiley",
   "version": "0.1.1",
   "author": "Mike Smiley <mikesmiley@me.com>",
-  "url": "https://github.com/mikesmiley/smiley",
+  "url": "https://github.com/msmiley/smiley",
   "main": "./lib",
-  "repository": "mikesmiley/smiley.git",
+  "repository": "msmiley/smiley.git",
   "scripts": {
     "doc": "cake doc",
     "prepublish": "cake build test doc",
-    "test": "cake test"
+    "test": "cake build test"
   },
   "devDependencies": {
     "docco": "*",
