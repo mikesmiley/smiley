@@ -66,3 +66,11 @@ exports.findModuleRoot = (mod) ->
       # go up one level
       p = path.join(p, "..")
   return null
+
+#
+# Function converts string to Title Case. Hyphens and underscores are
+# converted to spaces.
+#
+exports.titleCase = (str) ->
+  return str.replace(/[\-_]/g, " ").replace /^.| ./g, (c) ->
+    c.toUpperCase()

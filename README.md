@@ -6,6 +6,10 @@ These are functions I use often but are too simple to have their own package.
 
 ## Functions
 
+### `titleCase(string)`
+
+Converts a string to Title Case. Hyphens and underscores are converted to spaces.
+
 ### `getNetworkInterfaces()`
 
 Get an array of network interfaces in a different format than the typical `os.networkInterfaces()`. Makes traversing the interfaces easier.
