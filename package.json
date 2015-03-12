@@ -1,6 +1,6 @@
 {
   "name": "smiley",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Mike Smiley <msmiley@alumni.rice.edu>",
   "url": "https://github.com/msmiley/smiley",
   "main": "./lib",
