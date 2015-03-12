@@ -54,9 +54,9 @@ exports.smileyFace = ->
 exports.findModuleRoot = (mod) ->
   fs = require 'fs'
   path = require 'path'
-  # require.resolve yields entrypoint, so go one level above to start
+  # require.resolve yields entrypoint
   try
-    p = path.join(require.resolve(mod), "..")
+    p = path.dirname require.resolve(mod)
   catch e # assume this is because module can't be found
     return null
   # only allow twenty levels of traversal for safety
