@@ -1,5 +1,4 @@
 
-
 #
 # Function returns an Array of system network interfaces defined by the following object:
 # {
@@ -11,6 +10,7 @@
 # Interfaces with multiple addresses have a repeated name.
 #
 exports.getNetworkInterfaces = ->
+  os = require 'os'
   ret = []
   ifaces = os.networkInterfaces()
   for k,v of ifaces
@@ -26,6 +26,7 @@ exports.getNetworkInterfaces = ->
 # Function returns an external IP address for the current machine.
 #
 exports.getExternalIPAddress = ->
+  os = require 'os'
   ifaces = os.networkInterfaces()
   for own dev of ifaces
     for i in ifaces[dev]
