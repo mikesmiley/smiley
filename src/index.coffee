@@ -75,3 +75,27 @@ exports.findModuleRoot = (mod) ->
 exports.titleCase = (str) ->
   return str.replace(/[\-_]/g, " ").replace /^.| ./g, (c) ->
     c.toUpperCase()
+
+#
+# Function expands an IEC abbreviated size (e.g. 4Kb) into a full decimal number
+# by assuming the IEC binary format (1k = 1024)
+#
+exports.iecToDecimal = (str) ->
+    m = str.split /^([0-9\.]+)(\w+)$/
+    num = m[1]
+    units = m[2]
+    mult = null
+    switch units
+      when 'k', 'K', 'KB', 'Kb', 'KiB'
+        mult = 1024
+      when 'm', 'M', 'MB', 'Mb', 'MiB'
+        mult = 1024 * 1024
+      when 'g', 'G', 'GB', 'Gb', 'GiB'
+        mult = 1024 * 1024 * 1024
+      when 'b', 'B'
+        mult = 1
+
+    if mult
+      return parseFloat(num) * mult
+    else
+      throw new Error "iecToDecimal: error parsing #{str}"
