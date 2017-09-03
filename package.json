@@ -6,7 +6,7 @@
   "main": "./src",
   "repository": "msmiley/smiley.git",
   "scripts": {
-    "prepublish": "./node_modules/.bin/jasmine-node --color --verbose spec/"
+    "prepublish": "./node_modules/.bin/jasmine-node --color --verbose spec/",
     "test": "./node_modules/.bin/jasmine-node --color --verbose spec/"
   },
   "devDependencies": {
