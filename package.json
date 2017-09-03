@@ -6,13 +6,13 @@
   "main": "./src",
   "repository": "msmiley/smiley.git",
   "scripts": {
+    "prepublish": "./node_modules/.bin/jasmine-node --color --verbose spec/"
     "test": "./node_modules/.bin/jasmine-node --color --verbose spec/"
   },
   "devDependencies": {
-    "docco": "*",
     "jasmine-node": "^1.14.5"
   },
   "dependencies": {},
-  "keywords": [],
+  "keywords": ["utilities", "zeropad", "isascii", "hexdump"],
   "license": "MIT"
 }
