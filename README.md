@@ -42,10 +42,6 @@ Find the root of the given module defined as the first directory above the modul
 
 Debounce the given function by preventing multiple executions within the given waitMS time. If runImmediate is true, the function will be executed immediately the first time.
 
-### `smileyFace() -> String`
-
-This is just a fun one that returns an ASCII smiley face :)
-
 ## Installation
 
 ```bash
